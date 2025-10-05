@@ -1,67 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V&E Travels</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="logo">V&E TRAVELS</div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">DESTINATIONS</a></li>
-                <li><a href="#">TOURS</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <button class="search-btn">🔍</button>
+<html>
+    <head>
+        <title>Mi Web Ejemplo</title>
+        <meta charset="utf-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,900;1,200;1,300;1,900&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Raleway', sans-serif;
+                /* Esto es un comentario */
+                /* Puede ocupar
+                más de una línea   */
+            }
+            .main-title{
+                text-align: center;
+            }
+            img {
+                max-height: 380px;
+            }
+            img:hover{
+                transform: scale(0.9);
+            }
+            .container{
+                display:flex;
+                align-items: top;
+                justify-content: space-evenly;
+            }
+            .blue{
+                background-color: blue;
+            }
+            .green{
+                background-color: green;
+            }
+            a.button{
+                padding:5px;
+                margin-top:48px;
+                color:white;
+                font-weight: 400;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            a.button:hover{
+                text-decoration: underline;
+            }
+            #main-button{
+                font-size: 20px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--   ESTO ES UN COMENTARIO    -->
+        <h1 class="main-title">Laboratorio de las chicas superpoderosas</h1>
+        <div class="container">
+            <div class="column">
+                <!-- OTRO COMENTARIO-->
+                <!--p> Texto viejo entre etiquetas <p-->
+                <h3>Receta</h3>
+                <p>Para crear chicas superpoderosas se necesita:</p>
+                <ul>
+                    <li class="item">Azúcar</li>
+                    <li class="item">Flores</li>
+                    <li class="item">Muchos colores</li>
+                    <li class="item" id="secreto">Elemento X</li> <!-- Averiguar nombre -->
+                </ul>
+                <a class="button blue" onclick='alert("Es secreto!!");console.log(prompt("¿Qué pensás que es?"));'>
+                    Descubrir Elemento X
+                </a>
+            </div>
+            <div class="column">
+                <img id="main-img" src="https://i.pinimg.com/550x/f0/9f/18/f09f188fdc2f5a78025eec701aa3648b.jpg">
+            </div>
         </div>
-    </header>
+        <script src="script.js"></script>
+    </body>
 
-    <main>
-        <section class="hero-section">
-            <h1>PLAN YOUR NEXT ADVENTURE!</h1>
-            <button class="get-started-btn">get started</button>
-        </section>
-
-        <section class="recommendations-section">
-            <h2>Places we recommend</h2>
-            <div class="cards-container">
-                <div class="travel-card">
-                    <img src="https://images.unsplash.com/photo-1543329215-6804574938a4?q=80&w=2940&auto=format&fit=crop" alt="Eiffel Tower at night">
-                    <h3>Eiffel Tower</h3>
-                    <p>Package</p>
-                </div>
-                <div class="travel-card">
-                    <img src="https://images.unsplash.com/photo-1549419142-2b2f2c86b240?q=80&w=2835&auto=format&fit=crop" alt="Bali Beach with a sunset view">
-                    <h3>Bali Beach</h3>
-                    <p>Package</p>
-                </div>
-                <div class="travel-card">
-                    <img src="https://images.unsplash.com/photo-1587843812836-e820c7857030?q=80&w=2940&auto=format&fit=crop" alt="Cinderella's castle at Disney World">
-                    <h3>Disney Package</h3>
-                    <p>Package</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section">
-            <div class="contact-info">
-                <h3>CONTACT US</h3>
-                <p>+54 911 2409 1001</p>
-                <p>VandEtravels@gmail.com</p>
-            </div>
-        </section>
-    </main>
-
-</body>
 </html>
